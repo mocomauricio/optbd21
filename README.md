@@ -1,2 +1,8 @@
 # optbd21
-Proyecto de Optativa Bases de Datos: Reloj Biométrico adaptado a la pandemia
+Proyecto de la asignatura Optativa-Bases de Datos de Ingeniería Mecatrónica, FIUNA
+
+Descripción: Reloj marcardor Biométrico adaptado a la pandemia, 
+Sensores: picamera y buzzer
+
+Integrantes
+- Mauricio Morales
