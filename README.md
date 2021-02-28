@@ -6,3 +6,4 @@ Sensores: picamera y buzzer
 
 Integrantes
 - Mauricio Morales
+- Nelson Melo
