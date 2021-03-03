@@ -8,3 +8,4 @@ Integrantes
 - Mauricio Morales
 - Nelson Rodrigo Melo
 - Rolando Cena
+- Kevint Kim
