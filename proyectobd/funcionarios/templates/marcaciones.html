@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trabajo Práctico Base de Datos - FIUNA</title>
+
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/datatables/dataTables.bootstrap4.css' %}" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+    
+
+    <h1>Marcaciones</h1>
+
+    <table id="datatables" class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>Funcionario</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Temperatura</th>
+          <th>imagen</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for marcacion in object_list %}
+        <tr>
+          <td>{{ marcacion.funcionario }}</td>
+          <td>{{ marcacion.fecha }}</td>
+          <td>{{ marcacion.hora }}</td>
+          <td>{{ marcacion.temperatura }}</td>
+          <td>{{ marcacion.imagen_tag }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+
+
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/datatables/jquery.dataTables.js' %}"></script>
+    <script src="{% static 'vendor/datatables/dataTables.bootstrap4.js' %}"></script>
+
+
+
+  <script type="text/javascript">
+    /*
+    $(document).ready(function() {
+        $('#datatables').DataTable();
+    });
+    */
+
+        let table = $('#datatables').DataTable({
+            language: {
+                "sProcessing":     "Procesando...",
+                "sLengthMenu":     "Mostrar _MENU_ registros",
+                "sZeroRecords":    "No se encontraron resultados",
+                "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix":    "",
+                "sSearch":         "",
+                "sSearchPlaceholder": "Buscar...",
+                "sUrl":            "",
+                "sInfoThousands":  ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst":    "Primero",
+                    "sLast":     "Último",
+                    "sNext":     "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                }
+            }
+        });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
