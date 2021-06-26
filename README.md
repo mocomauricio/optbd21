@@ -9,3 +9,7 @@ Integrantes
 - Nelson Rodrigo Melo
 - Rolando Cena
 - Kevint Kim
+
+lenguaje utilizado:python
+framework: django
+motor de base de datos: postgres
